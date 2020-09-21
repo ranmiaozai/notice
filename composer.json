@@ -1,0 +1,13 @@
+{
+  "name": "notice",
+  "description": "通知类集合",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Notice\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  }
+}
