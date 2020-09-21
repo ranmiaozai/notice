@@ -1,0 +1,18 @@
+{
+    "require": {
+        "lcobucci/jwt": "^3.2",
+        "jaeger/querylist": "^3.2",
+        "phpoffice/phpword": "^0.16.0",
+        "stripe/stripe-php": "^7.28",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mt\\": "src/",
+            "Fw\\": "Frame/"
+        },
+        "files": [
+            "Frame/functions.php"
+        ]
+    }
+}
