@@ -1,6 +1,6 @@
 <?php
 
-namespace Notice;
+namespace Ranmiaozai\Notice;
 /**
  * 通知抽象类
  * Class NoticeAbstract

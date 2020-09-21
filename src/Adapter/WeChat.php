@@ -1,9 +1,10 @@
 <?php
 
-namespace Notice\Adapter;
+namespace Ranmiaozai\Notice\Adapter;
 
-use Notice\NoticeAbstract;
-use Notice\NoticeInterface;
+use Ranmiaozai\Notice\NoticeAbstract;
+use Ranmiaozai\Notice\NoticeInterface;
+
 
 /**
  * 微信通知
@@ -12,7 +13,8 @@ use Notice\NoticeInterface;
  */
 class WeChat extends NoticeAbstract implements NoticeInterface
 {
-    protected $typeName="微信公众号";
+    protected $typeName = "微信公众号";
+
     public function handle($msg)
     {
         return true;
