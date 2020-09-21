@@ -12,7 +12,10 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Ranmiaozai\\": "src"
-    }
+      "Ranmiaozai\\Notice": "src"
+    },
+    "files": [
+      "src/functions.php"
+    ]
   }
 }

@@ -1,2 +1,7 @@
-
-/vendor/
+.idea/
+vendor/
+logs/
+composer.lock
+.project
+.buildpath
+.history
