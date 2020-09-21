@@ -1,10 +1,18 @@
 {
-  "name": "notice",
-  "description": "通知类集合",
-  "type": "project",
+  "name": "ranmiaozai/notice",
+  "description": "Message sending integration",
+  "type": "library",
+  "license": "Apache",
+  "authors": [
+    {
+      "name": "hqr0597",
+      "email": "455942121@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Ranmiaozai\\Notice\\": "src/"
+      "Ranmiaozai\\Notice\\": "src"
     },
     "files": [
       "src/functions.php"
