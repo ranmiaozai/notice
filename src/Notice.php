@@ -49,17 +49,12 @@ class Notice
 
     /**
      * 通知操作
-     * @param array|string $msg 消息
+     * @param array|string|object $msg 消息
      * @param callable|null $errorHandle 报错处理方法,不传就使用当前实例报错方法或者全局方法
      * @return array
      */
     public function handle($msg, callable $errorHandle = null)
     {
-        if (!is_array($msg)) {
-            $msg = [
-                "msg" => $msg
-            ];
-        }
         $this->_error = [];
         $this->_driver->rewind();
         $result = [];

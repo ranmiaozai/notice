@@ -9,7 +9,7 @@ interface NoticeInterface
 {
     /**
      * 发送消息操作
-     * @param array|string $msg
+     * @param array|string|object $msg
      * @return boolean
      */
     public function handle($msg);
