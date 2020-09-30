@@ -3,7 +3,6 @@
 namespace Ranmiaozai\Notice\Adapter;
 
 use Ranmiaozai\Notice\NoticeAbstract;
-use Ranmiaozai\Notice\NoticeInterface;
 
 
 /**
@@ -11,7 +10,7 @@ use Ranmiaozai\Notice\NoticeInterface;
  * Class WeChat
  * @package Notice\Adapter
  */
-class WeChat extends NoticeAbstract implements NoticeInterface
+class WeChat extends NoticeAbstract
 {
     protected $typeName = "微信公众号";
 

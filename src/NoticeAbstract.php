@@ -6,7 +6,7 @@ namespace Ranmiaozai\Notice;
  * Class NoticeAbstract
  * @package Notice
  */
-abstract class NoticeAbstract
+abstract class NoticeAbstract implements NoticeInterface
 {
     /**
      * 报错信息

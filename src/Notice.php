@@ -12,6 +12,7 @@ class Notice
      * @var \SplObjectStorage
      */
     protected $_driver;
+    protected $_driver_key = [];//存储通知类key标识
     /**
      * 错误信息
      * @var array
@@ -41,9 +42,13 @@ class Notice
      */
     public function addDriver(NoticeInterface $notice)
     {
-        if (!$this->_driver->contains($notice)) {
-            $this->_driver->attach($notice);
+        $noticeName = $notice->getNoticeName();
+        //同一个调用类只添加一次
+        if (in_array($noticeName, $this->_driver_key) || $this->_driver->contains($notice)) {
+            return $this;
         }
+        $this->_driver->attach($notice);
+        $this->_driver_key[] = $noticeName;
         return $this;
     }
 
