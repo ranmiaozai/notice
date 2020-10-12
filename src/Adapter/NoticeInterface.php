@@ -1,5 +1,5 @@
 <?php
-namespace Ranmiaozai\Notice;
+namespace Ranmiaozai\Notice\Adapter;
 /**
  * 通知接口类
  * Interface NoticeInterface

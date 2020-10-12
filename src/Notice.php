@@ -2,6 +2,8 @@
 
 namespace Ranmiaozai\Notice;
 
+use Ranmiaozai\Notice\Adapter\NoticeInterface;
+
 /**
  * Class Notice
  * @package Notice

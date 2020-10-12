@@ -2,7 +2,6 @@
 
 namespace Ranmiaozai\Notice\Adapter;
 
-use Ranmiaozai\Notice\NoticeAbstract;
 
 
 /**
@@ -16,6 +15,6 @@ class WeChat extends NoticeAbstract
 
     public function handle($msg)
     {
-        return true;
+        echo 'wechat here';
     }
 }
