@@ -8,5 +8,3 @@ $Notice
     ->addDriver(new \Ranmiaozai\Notice\Adapter\WeChat())
     ->addDriver(new \Ranmiaozai\Notice\Adapter\Mail())
     ->handle('test 123');
-
-

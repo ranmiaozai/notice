@@ -1,5 +1,5 @@
 <?php
-namespace Mt\Lib\Mail;
+namespace Ranmiaozai\Notice\Lib\Mail;
 include_once __DIR__.'/class.phpmailer.php';
 include_once __DIR__.'/class.smtp.php';
 class Mail extends \PHPMailer {
