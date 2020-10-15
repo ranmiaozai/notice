@@ -2,6 +2,8 @@
 
 namespace Ranmiaozai\Notice\Adapter;
 
+
+
 use Ranmiaozai\Notice\Lib\WeChat\WeChatTemplateMessage;
 
 /**
@@ -29,12 +31,7 @@ class WeChat extends NoticeAbstract
 
     public function handle($msg)
     {
-        try {
-            $WeChatTemplateMessage = new WeChatTemplateMessage($this->access_token);
-            return $WeChatTemplateMessage->send($this->openid, $this->template_id, $this->params, $this->info_url);
-        } catch (\Exception $exception) {
-            $this->_error = $exception;
-            return false;
-        }
+        $WeChatTemplateMessage  = new WeChatTemplateMessage($this->access_token);
+        $WeChatTemplateMessage->send($this->openid, $this->template_id, $this->params, $this->info_url);
     }
 }

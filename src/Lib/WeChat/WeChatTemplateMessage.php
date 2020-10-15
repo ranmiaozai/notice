@@ -54,7 +54,7 @@ class WeChatTemplateMessage
     /**
      * 通过CURL发送数据
      * @param string $url 请求的URL地址
-     * @param array|string $data 发送的数据
+     * @param array $data 发送的数据
      * @return bool|string
      */
     protected function curlPost($url, $data)

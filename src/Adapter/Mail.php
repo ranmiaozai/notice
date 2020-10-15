@@ -63,12 +63,7 @@ class Mail extends NoticeAbstract
     public function handle($msg = '')
     {
         $Mail = new \Ranmiaozai\Notice\Lib\Mail\Mail();
-        try {
-            return $Mail->_send_mail($this->site, $this->username, $this->password, $this->from_name, $this->to_email, $this->subject, $this->content, $this->port);
-        } catch (\Exception  $exception) {
-            $this->_error = $exception;
-            return false;
-        }
+        return $Mail->_send_mail($this->site, $this->username, $this->password, $this->from_name, $this->to_email, $this->subject, $this->content, $this->port);
     }
 
 
